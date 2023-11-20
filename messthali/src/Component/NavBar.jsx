@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { FaBars, FaTimes } from 'react-icons/fa';
+
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const links = [
@@ -11,7 +12,7 @@ const NavBar = () => {
     { id: 5, link: "LogIn" },
   ];
   return (
-    <div className="flex justify-around items-center pr-8 w-full h-20 fixed px-2 bg-black m-auto">
+    <div className="flex justify-around items-center pr-8 w-full h-20 fixed px-2 bg-black m-auto z-10">
       <div>
         <h1 className="text-2xl ml-2">MessThali</h1>
       </div>
@@ -19,7 +20,7 @@ const NavBar = () => {
         <div className="hidden lg:block flex flex-row">
           <input
             type="text"
-            placeholder="Search Mess Here"
+            placeholder="Search city Here"
             className="rounded-l-sm outline-none text-black px-4 p-1"
           />
           <button className="bg-gray-500 rounded-r-sm px-4 p-1">Search</button>

@@ -11,7 +11,16 @@ const Home = () => {
           className="rounded-l-sm outline-none text-black px-4 p-1"
         />
         <button className="bg-gray-500 rounded-r-sm px-4 p-1">Search</button>
-      </div>
+      <span>
+      <select name="" id="" className="text-black p-2">
+        <option value="" select>Pune</option>
+        <option value="">Mumbai</option>
+        <option value="">Delhi</option>
+        <option value="">Nagpur</option>
+      </select>
+      </span>
+        </div>
+
       <div className="w-full flex flex-col justify-center text-center px-8 p-4">
         <h3>Explore Your Nearby Homely Mess</h3>
         <p>
